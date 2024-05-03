@@ -1,0 +1,42 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    font-size: 28px;
+}
+
+body{
+    background-color: #a2a2a2;
+}
+.content{
+    width: 70%;
+    font-size: 18px;
+    line-height: 2;
+    margin: 50px auto;
+    color: rgb(255, 255, 255);
+}
+.to-top{
+    position:fixed;
+    right: 35px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00f2ff;
+    color: #626262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.to-top.active{
+    opacity: 1;
+    bottom: 50px;
+}
